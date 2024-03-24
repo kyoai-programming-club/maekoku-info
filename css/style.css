@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  margin: 0;
+  line-height: 1.7;
+}
+
+h1 {
+  margin: 0;
+  font-family: "vdl-logojrpop-shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--brand-color);
+  line-height: 64px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "zen-old-mincho", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--brand-color);
+  letter-spacing: 16px;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --brand-color: #57BDD3; 
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--brand-color);
+}
+
+/*Header*/
+
+header {
+  position: relative;
+}
+
+#open,
+#close {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.header-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 1);
+  transform: translateX(100vw);
+  transition: transform .8s;
+  padding: 0 16px;
+}
+
+.mask-open {
+  transform: none;
+}
+
+header nav {
+  margin-top: 60px;
+}
+
+.mask-a {
+  border-bottom: 1px solid var(--brand-color);
+  text-align: center;
+  padding: 8px;
+  display: block;
+}
+
+.mask-a:hover {
+  background: #bbb;
+}
+
+/* ふぁっしおん */
+
+.fashion-div {
+  /* width: 100%; */
+  display: flex;
+  margin-top: 9px;
+}
+
+.fashion-div img {
+  width: 50%;
+} 
+
+/* new-post */
+.new-post {
+  margin-top: 9px;
+}
+
+.new-post img {
+  margin-top: 9px;
+}
+
+/* club */
+.club img {
+  margin-top: 9px;
+}
+
+/* えんじょい */
+
+.enjoying img {
+  margin-top: 9px;
+}
+
+.wrappe {
+  padding: 0 16px;
+}
+
+.enjoy-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+.big {
+  font-size: 20px;
+  color: var(--brand-color);
+}
+
+/*club*/
+
+.club-sub-title h2{
+  margin-top: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 1;
+}
+
+.club-sub-title h3 {
+  margin-top: 32px;
+}
+
+.club-sub-title .date-info {
+  font-size: 12px;
+  opacity: .6;
+}
+
+.club-sub-title p + p {
+  margin-top: 16px;
+}
+
+.club-sub-title table {
+  margin-top: 1rem;
+}
+
+td {
+  padding: 4px 8px;
+}
+
+.td-first {
+  min-width: 80px;
+  text-align: center;
+}
+
+.kakoi {
+  max-width: 500px;
+  margin: 0 auto;
+}
