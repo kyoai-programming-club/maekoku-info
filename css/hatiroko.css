@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.access p {
+  margin-left: 16px;
+}
+
+li {
+  margin-left: 16px;
+}
+
+ul li {
+  position: relative;
+}
+
+ul span {
+  position: absolute;
+  top: 0;
+  left: 130px;
+}
+
+.map {
+  max-width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.menu-img {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-img img {
+  border-radius: 16px;
+}
+
+.menu-img + .menu-img {
+  margin-top: 8px;
+}
+
+.gaisou-coontenar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gaisou-coontenar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intaver p {
+  margin: 0px !important;
+}

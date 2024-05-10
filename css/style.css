@@ -2,6 +2,10 @@
 
 /* common */
 
+:root {
+  --brand-color: #57BDD3; 
+}
+
 body {
   margin: 0;
   line-height: 1.7;
@@ -43,9 +47,7 @@ img {
   width: 100%;
 }
 
-:root {
-  --brand-color: #57BDD3; 
-}
+
 
 ul {
   margin: 0;
@@ -114,7 +116,12 @@ header nav {
 
 .fashion-div img {
   width: 50%;
-} 
+}
+
+/* かこい */
+.wrappe {
+  padding: 0 16px;
+}
 
 /* new-post */
 .new-post {
@@ -136,23 +143,19 @@ header nav {
   margin-top: 9px;
 }
 
-.wrappe {
-  padding: 0 16px;
-}
-
+/*一覧の方のエンジョイ*/
 .enjoy-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.enjoy-div {
+  line-height: 0;
+}
+
 /* footer */
 footer {
   text-align: center;
-}
-
-.big {
-  font-size: 20px;
-  color: var(--brand-color);
 }
 
 /*club*/
@@ -193,4 +196,52 @@ td {
 .kakoi {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/*えんじょいのカルーセル*/
+
+.enjoy-cal {
+  /* width: 80%; */
+  /* height: 220px; */
+  /* margin: 16px auto; */
+  /* outline:  8px solid red; */
+  overflow: hidden;
+  position: relative;
+}
+
+.enjoy-cal ul {
+  display: flex;
+  transition: transform .3s;
+}
+
+.enjoy-cal li {
+  min-width: 100%;
+}
+
+.enjoy-cal #prev,#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, .8);
+  color: #fff;
+  font-size: 24px;
+  padding: 0 8px 4px;
+  cursor: pointer;
+}
+
+.enjoy-cal #prev:hover,#next:hover {
+  opacity: .8;
+}
+
+.enjoy-cal #prev {
+  left: 0;
+}
+
+.enjoy-cal #next {
+  right: 0;
+}
+
+.enjoy-hidden {
+  display: none;
 }

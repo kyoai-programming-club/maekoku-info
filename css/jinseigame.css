@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+:root {
+  --brand-color: #57BDD3; 
+}
+
+.big {
+  font-size: 20px;
+  color: var(--brand-color);
+}
